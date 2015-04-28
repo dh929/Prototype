@@ -73,44 +73,35 @@
             </div>
         </div>
 
+
         <div class="form">
         <div class="row">
             <div class="col-md-8">
                 <h3>If you have any questions, need more information, or have any comments, feel free to send us an email.</h3>
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>First Name:</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your first name.">
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Last Name:</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your last name.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Email Address:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Message:</label>
-                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-                        </div>
-                    </div>
-                    <div id="success"></div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-		</div>
-        </div>
-        </div>
+                <br>
 
+    <form>
+      
+
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" id="name" placeholder="Name:" required data-validation-required-message="Please enter your name.">
+      
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email:"required data-validation-required-message="Please enter your email address."/>
+      
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Message:" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+      
+      
+      <div class="submit">
+        <input type="submit" value="SEND" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+  </div>
+            </div>
+		
+        </div>
+		
+        <br>
+        <br>
         <hr>
 
         <footer>
